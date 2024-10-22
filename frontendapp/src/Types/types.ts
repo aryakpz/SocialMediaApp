@@ -1,8 +1,8 @@
 export type UserProps={
-    id:number;
-    name:string;
-    email:string;
-    gender:string;
+    id:number ;
+    name:string 
+    email:string 
+    gender:"male" |"female"
     status:"active" | "inactive";
 }[]
 
@@ -30,3 +30,4 @@ export type TosoProps={
     due_on:Date;
     status:"pending" | "completed"
 }
+

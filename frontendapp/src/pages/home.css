@@ -56,7 +56,6 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 20px;
 }
 
 .userlist {
@@ -72,7 +71,7 @@
     display: flex;
     box-shadow: 0 1px 3px;
     font-size: 20px;
-    gap: 10px;
+    position: relative;
 }
 
 .singleuser:hover {
@@ -92,7 +91,9 @@
 }
 
 .singleuser span {
-    margin-top: 6px;
+    position: absolute;
+    left: 60px;
+    top: 35px;
 }
 
 .signup {
@@ -110,7 +111,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
     padding: 40px;
-
 }
 
 .signup .input {
@@ -121,7 +121,6 @@
 }
 
 .signup .textbox {
-    /* padding: 50px; */
     font-size: 25px;
     border: none;
     background-color: transparent;
@@ -171,7 +170,212 @@
     gap: 20px;
 }
 
-
 .signup h3 {
     font-size: 30px;
+}
+
+.userpost {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 60px;
+    margin-top: 8rem;
+}
+
+.postbody {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    box-shadow: 0 1px 3px;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.postbody:hover {
+    background-color: aliceblue;
+}
+
+.postbody p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.postuser {
+    border-bottom: 1px solid rgb(204, 200, 200);
+    padding-bottom: 8px;
+}
+
+.postuser img {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(214, 208, 208);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.postbody h3 {
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.postdata {
+    margin-bottom: 50px;
+}
+
+.logosec {
+    display: flex;
+    right: 35px;
+    left: 35px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid rgb(204, 200, 200);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+.logosec img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.topsection {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+    background-color: white;
+    top: 0;
+    box-shadow: 0 1px 3px;
+}
+
+.userinfo {
+    margin: 20px;
+    border-radius: 30px;
+    padding: 12px;
+    box-shadow: 0 1px 3px;
+    display: flex;
+    flex-flow: row;
+}
+
+.userinfo:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.userinfo:active {
+    transform: scale(.98);
+}
+
+.userinfo p {
+    margin: 0;
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+.userinfo img {
+    width: 20px;
+    height: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-flow: row;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 30px
+}
+
+.profile img {
+    height: 100px;
+    background-color: aliceblue;
+    width: 100px;
+    padding: 30px;
+    box-shadow: 0 1px 2px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.topnav {
+    display: flex;
+    box-shadow: 0 1px 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1020;
+    background-color: white;
+}
+
+.bodysec{
+    margin-top: 25rem;
+}
+
+.postandusers {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    position: absolute;
+    right: 60px;
+    gap: 40px;
+}
+
+.postandusers div {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 0px 20px;
+    border-radius: 30px;
+    box-shadow: 0 1px 2px;
+
+}
+
+.postandusers div:hover {
+    background-color: rgb(134, 136, 138);
+}
+
+.postandusers img {
+    width: 30px;
+}
+
+.postandusers p {
+    font-size: 20px;
+}
+
+.mainlist {
+    display: flex;
+    flex-flow: row;
+}
+
+.userlist {
+    display: flex;
+    flex-flow: column;
+}
+
+.userpost{
+    margin: 0;
+}
+
+.notfound {
+    position: relative;
+    top: 60px;
+}
+
+.bodysec{
+    position: relative;
+}       
+
+.edituser{
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.edituser:hover{
+    color: rgb(58, 58, 189);
 }
